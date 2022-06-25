@@ -9,4 +9,4 @@
  4. Calculate the perimeter of the object, that is, its size;
  5. Build pixel map representing the object.
 
- Other auxiliary functions 
+ Other auxiliary functions provide the height and width of the object.
