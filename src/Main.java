@@ -5,8 +5,8 @@ public class Main {
 		ImageProcessing test;
 		String s = new String();
 		
-		System.out.println("Digite nome do arquivo + .png");
-		s = EntradaTeclado.leString();
+		System.out.println("Insert file name including file format (e.g. .png)");
+		s = KeyboardInput.readString();
 		
 		test = new ImageProcessing(s);
 		
@@ -16,8 +16,5 @@ public class Main {
 		System.out.println(test.getBorder());
 		
 		System.out.println(test.getSizeBorder());
-		
-		
 	}
-
 }

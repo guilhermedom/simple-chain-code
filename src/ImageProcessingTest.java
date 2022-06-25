@@ -10,13 +10,12 @@ import org.junit.Test;
 
 /**
  * 
- * @author Leonardo Meireles Murtha Oliveira 4180285
- * @author Guilherme Domingos Faria Silva	9361094
+ * @author Guilherme Domingos Faria Silva
+ * @author Leonardo Meireles Murtha Oliveira
  *
  */
 
 public class ImageProcessingTest {
-	
 	@Test
 	public void testGetInitial() throws IOException {
 		ImageProcessing ip = new ImageProcessing("images/circle.png");
@@ -75,7 +74,7 @@ public class ImageProcessingTest {
 		BufferedImage image;
 		File inFile = new File("images/circle.png");
 		image = ImageIO.read(inFile);
-		ChainCodes chainCode = new ChainCodes(image,20,20,1,1);
+		ChainCode chainCode = new ChainCode(image, 20, 20, 1, 1);
 		chainCode.doContour();
 
 	}
@@ -87,7 +86,7 @@ public class ImageProcessingTest {
 	}
 	
 	@Test
-	public void testEntradaTeclado() {
-		EntradaTeclado t = new EntradaTeclado();
+	public void testKeyboardInput() {
+		KeyboardInput t = new KeyboardInput();
 	}
 }
